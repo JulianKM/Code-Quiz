@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    margin: 100px;
+}
+
+.timer {
+    color: slateblue;
+    position: absolute;
+    bottom: 10px;
+}
+
+.scores {
+    color: slateblue;
+    position: absolute;
+    top: 10px;
+}
+
+button{
+    background-color: salmon;
+    color: white;
+    width: auto;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 100%;
+}
+
+button:hover {
+    background-color: rgb(243, 51, 30);
+}
