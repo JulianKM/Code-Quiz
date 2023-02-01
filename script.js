@@ -38,6 +38,11 @@ function startTimer() {
             }
         }, 1000);    
     }
+startBtn.addEventListener("click", function(){
+    firstScreen.style.display = "none";
+    startTimer();
+    startQuiz(0);
+});
 
 function startQuiz (questionElIndex) {
     choicesList.replaceChildren();
@@ -81,8 +86,3 @@ function endQuiz() {
     });
     clearInterval(clockInt);
 }
-startBtn.addEventListener("click", function(){
-    firstScreen.style.display = "none";
-    startTimer();
-    startQuiz(0);
-});
