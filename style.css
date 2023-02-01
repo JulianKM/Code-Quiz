@@ -1,29 +1,31 @@
-body{
+*{
+    background-color: aquamarine;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
-.timer {
+#timer{
     color: slateblue;
     position: absolute;
     bottom: 10px;
 }
 
-.scores {
+#scores {
     color: slateblue;
     position: absolute;
     top: 10px;
 }
 
-button{
-    background-color: salmon;
-    color: white;
-    width: auto;
+button {
     border-radius: 15px;
+    width: auto;
     height: 50px;
     font-size: 100%;
 }
 
-button:hover {
-    background-color: rgb(243, 51, 30);
+li {
+    border: 3px;
+    border-radius: 10px;
+    width: auto;
+    height: 30px;
 }
