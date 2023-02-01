@@ -8,7 +8,7 @@ var feedback = document.querySelector("#feedback");
 var initial = document.querySelector("#initial");
 var scores = document.querySelector("#highscores");
 var timeLeft = 60;
-var clockInt;
+var timerEl;
 
 var questions = [
     "What is the shortcut command for statup code in index.html?",
@@ -30,7 +30,7 @@ var correct = [
 function startTimer() {
     timer.textContent = "Time remaining: " + timeLeft;
 
-        clockInt = setInterval(function() {
+        timerEl = setInterval(function() {
             timeLeft--;
             timer.textContent = "Time remaining: " + timeLeft
             if (timeLeft <= 0) {
@@ -84,5 +84,5 @@ function endQuiz() {
         quizScore.textContent = "Initial and Score " + initialBtn.value + " " + timeLeft
         scores.appendChild(quizScore)
     });
-    clearInterval(clockInt);
+    clearInterval(timerEl);
 }
